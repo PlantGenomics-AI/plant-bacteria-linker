@@ -3,3 +3,4 @@ numpy
 biopython
 scikit-learn
 jupyterlab
+matplotlib
