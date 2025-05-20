@@ -4,3 +4,4 @@ biopython
 scikit-learn
 jupyterlab
 matplotlib
+seaborn
