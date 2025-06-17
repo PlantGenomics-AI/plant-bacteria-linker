@@ -137,7 +137,7 @@ def main():
 
     # 5. Paraleliza com logs e salvamentos
     batch = 10
-    with ProcessPoolExecutor(max_workers=6, initializer=init_globals, initargs=(proj, y)) as exe:
+    with ProcessPoolExecutor(max_workers=8, initializer=init_globals, initargs=(proj, y)) as exe:
         for idx, k in enumerate(ks, start=1):
             res = exe.submit(avaliar_gmm, k).result()
             if res: resultados.append(res)
